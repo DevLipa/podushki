@@ -1,3 +1,13 @@
+:root {
+    --main-color: rgb(214, 187, 211);
+    --pink-color: rgb(176, 142, 173);
+    --brightpink-color: rgb(206, 179, 203);
+}
+.general_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -12,19 +22,19 @@ header {
     width: 507px;
 }
 a {
-    color: rgb(214, 187, 211);
+    color: var(--main-color);
     font-family: Cormorant Garamond;
     font-size: 20px;
     text-decoration: none;
 }
-.kv1 {
+.first_square {
     height: 440px;
     background-color: rgb(201, 173, 198);
     width: 100%;
 }
-.kv2 {
+.second_square {
     height: 440px;
-    background-color: rgb(214, 187, 211);
+    background-color: var(--main-color);
     width: 100%;
 }
 body {
@@ -41,13 +51,13 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.kv3 {
+.third_square {
     background-color: rgb(167, 139, 164);
     height: 50px;
     width: 50px;
 }
-.kv4 {
-    background-color: rgb(176, 142, 173);
+.fourth_square {
+    background-color: var(--pink-color);
     height: 50px;
     width: 50px;
 }
@@ -57,7 +67,7 @@ body {
     right: 0;
     display: flex;
 }
-.wrapper1 {
+.promo {
     position: relative;
 }
 .kartinka {
@@ -72,7 +82,7 @@ body {
     top: 110px;
     height: 425px;
     width: 400px;
-    background-color: rgb(176, 142, 173);
+    background-color: var(--pink-color);
     color: white;
     font-family: Cormorant Garamond;
 }
@@ -102,17 +112,17 @@ body {
 .bloks_face {
     height: 427px;
     width: 368px;
-    background-color: rgb(206, 179, 203);
+    background-color: var(--brightpink-color);
 }
 .bloks_podushka {
     height: 427px;
     width: 368px;
-    background-color: rgb(206, 179, 203);
+    background-color: var(--brightpink-color);
 }
 .bloks_klava {
     height: 427px;
     width: 368px;
-    background-color: rgb(206, 179, 203);
+    background-color: var(--brightpink-color);
 }
 .text2 {
     height: 181px;
@@ -134,9 +144,6 @@ body {
     color: rgb(95, 77, 93);
 }
 .button_learn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 120px;
 }
 .button_now {
@@ -146,21 +153,25 @@ body {
     font-size: 13px;
     text-transform: uppercase;
 }
-h1 {
+h5 {
     font-family: Cormorant Garamond;
     font-size: 23px;
     color: white;
     padding-left: 15px;
 }
-h2 {
+h6 {
     font-family: Cormorant Garamond;
     font-size: 13px;
     color: white;
     padding-left: 15px;
 }
+.pictures3 h5,
+h6 {
+    margin: 15px;
+}
 .table13 {
     width: 100%;
-    background-color: rgb(206, 179, 203);
+    background-color: var(--brightpink-color);
     height: 820px;
     display: flex;
     justify-content: center;
@@ -179,11 +190,11 @@ h2 {
 .bloksbloks {
     height: 450px;
     width: 440px;
-    background-color: rgb(176, 142, 173);
+    background-color: var(--pink-color);
     margin-right: -72px;
 }
 .bloksbloks_pict {
-    margin-top: 160px;
+    margin-top: 117px;
     margin-left: 30px;
 }
 .sofa {
@@ -282,7 +293,7 @@ h2 {
 .inputtext12 {
     height: 568px;
     width: 100%;
-    background-color: rgb(206, 179, 203);
+    background-color: var(--brightpink-color);
 }
 .contactspace {
     height: fit-content;
@@ -362,7 +373,7 @@ form {
     height: 235px;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(rgb(206, 179, 203), white);
+    background: linear-gradient(var(--brightpink-color), white);
     color: rgb(186, 159, 183);
 }
 .home {
@@ -371,9 +382,6 @@ form {
     align-items: center;
 }
 .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(186, 159, 183);
     width: 100px;
     height: 100px;
